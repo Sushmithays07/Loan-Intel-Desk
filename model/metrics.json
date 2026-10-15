@@ -1,0 +1,87 @@
+{
+  "accuracy": 0.8133333333333334,
+  "per_class": {
+    "rejected": {
+      "precision": 0.7613293051359517,
+      "recall": 0.8842105263157894,
+      "f1-score": 0.8181818181818182,
+      "support": 570.0
+    },
+    "approved": {
+      "precision": 0.8773234200743495,
+      "recall": 0.7492063492063492,
+      "f1-score": 0.8082191780821918,
+      "support": 630.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      504,
+      66
+    ],
+    [
+      158,
+      472
+    ]
+  ],
+  "train_size": 4800,
+  "test_size": 1200,
+  "trained_at": "2026-10-09T06:06:08.164195+00:00",
+  "label_note": "Labels are synthetic (rule-based points + Gaussian noise), so accuracy measures how well the tree recovers that rule, not real-world lending outcomes.",
+  "training_ranges": {
+    "age": [
+      21.0,
+      64.0
+    ],
+    "annual_income": [
+      200037.0,
+      2499820.0
+    ],
+    "credit_score": [
+      300.0,
+      899.0
+    ],
+    "loan_amount": [
+      50056.0,
+      2999740.0
+    ],
+    "loan_term": [
+      12.0,
+      240.0
+    ],
+    "existing_loans": [
+      0.0,
+      3.0
+    ],
+    "existing_loan_amount": [
+      0.0,
+      1199469.0
+    ],
+    "monthly_emi": [
+      2.0,
+      59999.0
+    ],
+    "dependents": [
+      0.0,
+      4.0
+    ],
+    "savings": [
+      545.0,
+      1499968.0
+    ],
+    "employment_years": [
+      0.0,
+      34.0
+    ],
+    "previous_defaults": [
+      0.0,
+      2.0
+    ],
+    "assets": [
+      69.0,
+      4999661.0
+    ]
+  },
+  "provenance": "Computed by re-running model/train_model.py (seed 42, 80/20 stratified split) on data/loan_dataset.csv in a scratch directory; the resulting tree was verified identical to the shipped loan_model.pkl, which was left untouched.",
+  "metrics_computed_with_sklearn": "1.8.0"
+}

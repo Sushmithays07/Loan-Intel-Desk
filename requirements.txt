@@ -1,0 +1,24 @@
+# Python 3.10 - 3.13 recommended.
+# scikit-learn is PINNED to 1.6.1 because model/loan_model.pkl was saved with that version.
+# Loading it with another version may warn or break. Only change it if you retrain the model.
+scikit-learn==1.6.1
+joblib>=1.4,<2
+pandas>=2.2,<3
+numpy>=1.26,<2.3
+
+# Backend
+fastapi>=0.110,<1
+uvicorn>=0.30,<1
+pydantic>=2.6,<3
+pymongo>=4.8,<5
+dnspython>=2.6,<3        # required for mongodb+srv:// (Atlas) connection strings
+python-dotenv>=1.0,<2
+
+# Frontend (streamlit < 1.50 because the pages use use_container_width)
+streamlit>=1.40,<1.50
+plotly>=5.22,<7
+requests>=2.32,<3
+
+# Tests
+pytest>=8,<9
+httpx>=0.27,<1
